@@ -1,0 +1,15 @@
+/* Add this to your CSS file */
+body {
+  background-color: #2E2E2E;
+}
+
+.scroll-container::-webkit-scrollbar {
+  display: none;
+}
+
+.scroll-container {
+  -ms-overflow-style: none;
+  /* Internet Explorer 10+ */
+  scrollbar-width: none;
+  /* Firefox */
+}
