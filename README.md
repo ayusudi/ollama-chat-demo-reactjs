@@ -1,4 +1,4 @@
-<div style="display:flex;gap:10px;align-items:center">
+<div style="display:flex;gap:2px">
   <img src="./public/logo.png" style="height:60px" /> 
   <h1>Chat with LLM</h1>
 </div>
