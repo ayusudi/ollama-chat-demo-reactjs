@@ -3,5 +3,7 @@
 > Frontend: ReactJS & Tailwind  
 > Backend: Ollama 
 
-![image](image.png)
-![mobile](mobile.png)
+<div style="display:flex;gap:10px">
+  <img src="image.png" style="height:300px" /> 
+  <img src="mobile.png" style="height:300px" /> 
+</div>
