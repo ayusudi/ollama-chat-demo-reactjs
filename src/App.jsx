@@ -32,7 +32,7 @@ function App() {
     setIsLoading(true)
     setChats(temp)
     setInput('')
-    axios.post(`/api/chat`, data)
+    axios.post(`${import.meta.env.VITE_LLAMA_HOST}/api/chat`, data)
       .then(response => {
         console.log(response.data);
         console.log(response.data.response);
