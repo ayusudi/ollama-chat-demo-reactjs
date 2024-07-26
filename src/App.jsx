@@ -25,14 +25,18 @@ function App() {
     })
     e.preventDefault()
     const data = {
-      model: "llama3",
-      messages,
-      stream: false
+      url: `${import.meta.env.VITE_LLAMA_HOST}/api/chat`,
+      method: "POST",
+      data: {
+        model: "llama3",
+        messages,
+        stream: false
+      }
     };
     setIsLoading(true)
     setChats(temp)
     setInput('')
-    axios.post(`${import.meta.env.VITE_LLAMA_HOST}/api/chat`, data)
+    axios(data)
       .then(response => {
         console.log(response.data);
         console.log(response.data.response);
